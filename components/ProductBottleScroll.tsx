@@ -105,10 +105,9 @@ export default function ProductBottleScroll({ product }: Props) {
                 <div className="canvas-container w-full h-full max-w-4xl relative">
                     {/* Thumbnail / First Frame Placeholder */}
                     <img
-                        src={`${product.folderPath}/1.jpg`}
+                        src={`${product.folderPath}/1.jpg?v=2`}
                         alt={product.name}
                         className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${imagesLoaded ? 'opacity-0' : 'opacity-100'}`}
-                        priority="true"
                     />
                     <canvas ref={canvasRef} className="w-full h-full" />
                 </div>
