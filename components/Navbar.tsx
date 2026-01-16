@@ -20,40 +20,24 @@ export default function Navbar() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/80 backdrop-blur-xl border-b border-gray-200 shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-white/80 backdrop-blur-xl border-b border-gray-200 shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="container mx-auto px-6 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
-                        <div className="relative">
-                            <svg
-                                width="40"
-                                height="40"
-                                viewBox="0 0 40 40"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle cx="20" cy="20" r="18" fill="url(#gradient)" />
-                                <path
-                                    d="M20 10 L25 18 L20 15 L15 18 Z"
-                                    fill="white"
-                                    opacity="0.9"
-                                />
-                                <circle cx="20" cy="25" r="5" fill="white" opacity="0.8" />
-                                <defs>
-                                    <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
-                                        <stop offset="0%" stopColor="#FF6B9D" />
-                                        <stop offset="100%" stopColor="#FFA726" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                        <div className="relative w-12 h-12">
+                            <img
+                                src="/logo.png"
+                                alt="Bella's Candy Shop Logo"
+                                className="w-full h-full object-contain"
+                            />
                         </div>
 
                         <span className="text-2xl font-fredoka font-bold bg-gradient-to-r from-bella-pink via-bella-orange to-bella-yellow bg-clip-text text-transparent">
-                            Bella's Candies
+                            Bella's Candy Shop
                         </span>
                     </Link>
 

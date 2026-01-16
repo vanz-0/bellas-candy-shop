@@ -10,7 +10,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div>
                         <h3 className="text-2xl font-fredoka font-bold bg-gradient-to-r from-bella-pink to-bella-orange bg-clip-text text-transparent mb-4">
-                            Bella's Candies
+                            Bella's Candy Shop
                         </h3>
                         <p className="text-gray-400 mb-4">
                             Sweet treats for sweet moments. Delivered fresh to your door in Nairobi.
