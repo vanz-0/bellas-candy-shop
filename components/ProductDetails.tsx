@@ -72,7 +72,7 @@ export default function ProductDetails({ product }: Props) {
                         style={{ background: product.gradient }}
                     >
                         <img
-                            src={`${product.folderPath}/60.jpg`}
+                            src={`${product.folderPath}/preview.jpg`}
                             alt={product.detailsSection.imageAlt}
                             className="w-full h-full object-cover"
                         />
