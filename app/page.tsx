@@ -43,7 +43,7 @@ export default function Home() {
                     {/* Hero Section with Scroll Animation */}
                     <div className="relative">
                         <ProductBottleScroll product={currentProduct} />
-                        <ProductTextOverlays product={currentProduct} />
+                        {/* <ProductTextOverlays product={currentProduct} /> - Removed as per user request */}
                     </div>
 
                     {/* Content Sections */}
