@@ -100,7 +100,7 @@ export default function ProductBottleScroll({ product }: Props) {
     }, [frameIndex, images, imagesLoaded]);
 
     return (
-        <div ref={containerRef} className="relative h-[500vh]">
+        <div ref={containerRef} className="relative h-[200vh] md:h-[500vh]">
             <div className="sticky top-0 h-screen w-full flex items-center justify-center">
                 <div className="canvas-container w-full h-full max-w-4xl relative">
                     {/* Thumbnail / First Frame Placeholder */}

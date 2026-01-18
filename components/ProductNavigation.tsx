@@ -12,7 +12,7 @@ export default function ProductNavigation({ currentIndex, setCurrentIndex }: Pro
     return (
         <>
             {/* Arrow Navigation */}
-            <div className="fixed top-1/2 -translate-y-1/2 left-6 z-40">
+            <div className="hidden md:block fixed top-1/2 -translate-y-1/2 left-6 z-40">
                 {currentIndex > 0 && (
                     <motion.button
                         initial={{ opacity: 0, x: -20 }}
@@ -27,7 +27,7 @@ export default function ProductNavigation({ currentIndex, setCurrentIndex }: Pro
                 )}
             </div>
 
-            <div className="fixed top-1/2 -translate-y-1/2 right-6 z-40">
+            <div className="hidden md:block fixed top-1/2 -translate-y-1/2 right-6 z-40">
                 {currentIndex < products.length - 1 && (
                     <motion.button
                         initial={{ opacity: 0, x: 20 }}

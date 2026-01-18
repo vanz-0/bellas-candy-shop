@@ -9,9 +9,9 @@ interface Props {
 
 export default function ProductDetails({ product }: Props) {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     {/* Text Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
