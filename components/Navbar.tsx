@@ -31,7 +31,7 @@ export default function Navbar() {
                     <Link href="/" className="flex items-center gap-3 relative z-50">
                         <div className="relative w-12 h-12">
                             <img
-                                src="/logo.png"
+                                src="/logo-new.png"
                                 alt="Bella's Candy Shop Logo"
                                 className="w-full h-full object-contain"
                             />
